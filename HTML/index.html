@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+    <title>Pixel Art</title>
+  </head>
+  <body>
+    <div class="input_form_container">
+      <form class="input-form">
+        <label for="grid_size"></label>
+        <input type="number" class="input-form__grid_size" name="grid_size" min="2" placeholder="Grid size (max: 60)" />
+        <input type="number" class="input-form__pixel_size" name="pixel_size" placeholder="Pixel size (max: 100)" />
+        <input type="submit" class="input-form__submit-button" value="Validate" />
+      </form>
+    </div>
+    <div hidden class="user_input_error_msg_one">Make sure you have entered the size of grid and size of pixel.</div>
+    <div hidden class="user_input_error_msg_two">Make sure you don't exceed the grid and pixel size.</div>
+    <div class="grid_container"></div>
+    <div class="color_palette">
+      <div class="color_one"></div>
+      <div class="color_two"></div>
+      <div class="color_three"></div>
+      <div class="color_four"></div>
+    </div>
+    <script src="../js/app.js"></script>
+  </body>
+</html>
